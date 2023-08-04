@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/header-image.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 2.4rem 8%;
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 15rem;
+  cursor: pointer;
+}
+
+.main-nav-button {
+  border: 0;
+  outline: 0;
+  background-color: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.main-nav-button.lang {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 7px 10px;
+}
+
+.main-nav-button.lang img {
+  width: 1rem;
+  margin-left: 1rem;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  line-height: 1.25;
+  font-weight: 600;
+  max-width: 65rem;
+}
+
+.hero-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+}
+
+.email-signup {
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.email-signup input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 2rem;
+}
+
+.email-signup button {
+  background-color: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+}
+
+/************************************/
+/* Feature Section */
+/************************************/
+
+.features {
+  padding: 5rem 12%;
+  font-size: 2.2rem;
+}
+
+.features h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.features-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+}
+
+.features-text-box {
+  flex-basis: 50%;
+  margin-bottom: 2rem;
+}
+
+.features-img-box {
+  flex-basis: 50%;
+  margin-bottom: 2rem;
+}
+
+.features-img-box img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+/************************************/
+/* Feature Section */
+/************************************/
+
+.faq {
+  padding: 1.2rem 10%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.faq h2 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.faq-accordion {
+  margin: 6rem auto;
+  width: 100%;
+  max-width: 75rem;
+}
+
+.faq-accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.faq-accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-accordion label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 2rem;
+  transition: transform 0.25s;
+}
+
+.faq-accordion input[type="radio"] {
+  display: none;
+}
+
+.faq-accordion .faq-content {
+  background-color: #303030;
+  text-align: left;
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s, padding 0.25s;
+}
+
+.faq-accordion input[type="radio"]:checked + label + .faq-content {
+  max-height: 60rem;
+  padding: 3rem 2rem;
+}
+
+.faq-accordion input[type="radio"]:checked + label::after {
+  transform: rotate(45deg);
+}
+
+.faq .email-signup {
+  max-width: 60rem;
+  margin: 2rem auto 6rem;
+}
+
+.faq small {
+  font-size: 1.3rem;
+}
+
+/************************************/
+/* Feature Section */
+/************************************/
+
+.footer {
+  padding: 5rem 15% 1rem;
+  border-top: 6px solid #333;
+  color: #777;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.footer .footer-col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer .footer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer .main-nav-button .lang {
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
